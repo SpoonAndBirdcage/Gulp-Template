@@ -1,0 +1,2 @@
+var something = "Test string";
+

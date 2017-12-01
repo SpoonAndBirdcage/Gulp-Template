@@ -1,7 +1,47 @@
 // main.scss
-header{
+
+// Font Familes
+$font-stack: 'AvenirNextLTW01-Medium', Helvetica, sans-serif;
+
+
+html {
+    height: 100%;
     width: 100%;
-    height: 75px;
-    background: red;
+    box-sizing: border-box;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+} 
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: url('../images/dashboard_bg.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+header{
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+}
+
+nav {
+    padding: 20px 45px;
+}
+
+section.container {
+    display: block;
+    max-width: 1080px;
+    margin: 0 auto;
+    font-size: 0px;
+}
+
+.dash-icon {
+    width: 25%;
+    display: inline-block;
+}

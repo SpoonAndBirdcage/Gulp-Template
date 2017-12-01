@@ -2,25 +2,34 @@
 
 // Font Familes
 $font-stack: 'AvenirNextLTW01-Medium', Helvetica, sans-serif;
-
+$main-text-font: 'Helvetica Neue LT W01_55 Roman', Helvetica, sans-serif;
+$primary-font-color: #f8f9f8;
+$base-font-size: 1em;
 
 html {
     height: 100%;
     width: 100%;
-    box-sizing: border-box;
-}
+    font-family: $main-text-font;
+    font-size: 100%;
 
-* {
-    box-sizing: border-box;
+    * {
+        box-sizing: border-box;
+    }
 }
 
 img {
     max-width: 100%;
+    height: auto;
+    display: block;
 } 
 
 body {
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
     background: url('../images/dashboard_bg.jpg') center center no-repeat;
     background-size: cover;
 }
@@ -35,13 +44,44 @@ nav {
 }
 
 section.container {
-    display: block;
     max-width: 1080px;
     margin: 0 auto;
-    font-size: 0px;
+}
+
+.content-row {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .dash-icon {
-    width: 25%;
-    display: inline-block;
+    text-decoration: none;
+    font-family: $font-stack;
+    color: $primary-font-color;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    img {
+        display: block;
+        margin-bottom: 12px;
+    }
+    span {
+        text-align: center;
+        display: block;
+    }
+}
+
+footer .content-row {
+    padding: 25px;
+    img {
+        width: 220px;
+        margin-right: 25px;
+    }
+    p {
+        color: $primary-font-color;
+        font-size: $base-font-size * 1.1;
+    }
 }

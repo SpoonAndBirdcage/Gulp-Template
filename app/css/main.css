@@ -1,17 +1,23 @@
 html {
   height: 100%;
   width: 100%;
-  box-sizing: border-box; }
-
-* {
-  box-sizing: border-box; }
+  font-family: "Helvetica Neue LT W01_55 Roman", Helvetica, sans-serif;
+  font-size: 100%; }
+  html * {
+    box-sizing: border-box; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto;
+  display: block; }
 
 body {
   height: 100vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
   background: url("../images/dashboard_bg.jpg") center center no-repeat;
   background-size: cover; }
 
@@ -23,11 +29,35 @@ nav {
   padding: 20px 45px; }
 
 section.container {
-  display: block;
   max-width: 1080px;
+  margin: 0 auto; }
+
+.content-row {
+  width: 80%;
   margin: 0 auto;
-  font-size: 0px; }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
 
 .dash-icon {
-  width: 25%;
-  display: inline-block; }
+  text-decoration: none;
+  font-family: "AvenirNextLTW01-Medium", Helvetica, sans-serif;
+  color: #f8f9f8;
+  text-transform: uppercase;
+  font-weight: 400; }
+  .dash-icon img {
+    display: block;
+    margin-bottom: 12px; }
+  .dash-icon span {
+    text-align: center;
+    display: block; }
+
+footer .content-row {
+  padding: 25px; }
+  footer .content-row img {
+    width: 220px;
+    margin-right: 25px; }
+  footer .content-row p {
+    color: #f8f9f8;
+    font-size: 1.1em; }

@@ -9,11 +9,12 @@ var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
 var runSequence = require('run-sequence');
+var gutil = require('gulp-util');
 
 
 gulp.task('sass', function(){
     return gulp.src('app/scss/**/*.scss')
-    .pipe(sass())
+    .pipe(sass().on('error', gutil.log))
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({
         stream: true

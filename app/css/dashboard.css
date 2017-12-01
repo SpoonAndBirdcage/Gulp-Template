@@ -1,0 +1,81 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Helvetica Neue LT W01_55 Roman", Helvetica, sans-serif;
+  font-size: 100%; }
+  html * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("../images/dashboard_bg.jpg") center center no-repeat;
+  background-size: cover; }
+
+header {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3); }
+
+nav {
+  padding: 20px 45px; }
+
+section.container {
+  max-width: 1080px;
+  margin: 0 auto; }
+
+.content-row {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.dash-icon {
+  text-decoration: none;
+  font-family: "AvenirNextLTW01-Medium", Helvetica, sans-serif;
+  color: #f8f9f8;
+  text-transform: uppercase;
+  font-weight: 400; }
+  .dash-icon img {
+    display: block;
+    margin-bottom: 12px; }
+  .dash-icon span {
+    text-align: center;
+    display: block; }
+
+footer .content-row {
+  padding: 25px; }
+  footer .content-row img {
+    width: 220px;
+    margin-right: 25px; }
+  footer .content-row p {
+    color: #f8f9f8;
+    font-size: 1.1em; }

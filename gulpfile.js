@@ -5,16 +5,23 @@ var useref = require('gulp-useref');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
+var autoprefixer = require('gulp-autoprefixer');
 var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
 var runSequence = require('run-sequence');
 var gutil = require('gulp-util');
 
+var autoPrefixBrowserList = ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'];
+
 
 gulp.task('sass', function(){
     return gulp.src('app/scss/**/*.scss')
     .pipe(sass().on('error', gutil.log))
+    .pipe(autoprefixer({
+        browsers: autoPrefixBrowserList,
+        cascade:  true
+     }))
     .pipe(gulp.dest('app/css'))
     .pipe(browserSync.reload({
         stream: true
@@ -30,7 +37,7 @@ gulp.task('browserSync', function() {
 });
 
 gulp.task('useref', function(){
-    return gulp.src('app/*.html')
+    return gulp.src('app/**/*.html')
       .pipe(useref())
       .pipe(gulpIf('*.js', uglify()))
       // Minifies only if it's a CSS file

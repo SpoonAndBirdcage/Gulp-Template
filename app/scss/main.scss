@@ -1,6 +1,8 @@
 // Font Familes
 $font-stack: 'AvenirNextLTW01-Medium', Helvetica, sans-serif;
 $main-text-font: 'Helvetica Neue LT W01_55 Roman', Helvetica, sans-serif;
+$ultra-light-font: 'Helvetica Neue LT W01_25 Ult L', Helvetica, sans-serif;
+$light-font-style: 'Avenir Next W01 Light', Helvetica, sans-serif;
 $primary-font-color: #f8f9f8;
 $dark-font-color: #333;
 $light-grey-color: #bbbbbb;
@@ -32,8 +34,8 @@ a {
 h2 {
     margin: 0;
     padding: 12px;
-    font-family: $main-text-font;
-    font-size: $base-font-size * 1.8;
+    font-family: $ultra-light-font;
+    font-size: $base-font-size * 2.0;
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -41,7 +43,8 @@ h2 {
 
 h3 {
     margin: 0;
-    font-size: $base-font-size * 1.4;
+    font-family: $light-font-style;
+    font-size: $base-font-size * 1.5;
     color: $accent-color;
 }
 
@@ -49,11 +52,13 @@ h4 {
     font-family: $font-stack;
     font-size: $base-font-size * 1.2;
     margin: 0;
+    color: $accent-color;
 
     span {
         padding-top: 4px;
         display: block;
         font-size: $base-font-size/1.6;
+        color: $dark-font-color;
     }
 }
 
@@ -79,6 +84,7 @@ header{
 
         a:first-of-type {
             width: 250px;
+            line-height: 1.0;
         }
 
         img {
@@ -100,7 +106,7 @@ header{
             .current-user-ddl {
                 display: flex;
                 align-items: center;
-                text-align: right;
+                text-align: left;
             }
         }
     }
@@ -166,23 +172,28 @@ section.container {
 
 
 footer {
-    display: flex;
-    max-width: 960px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    padding: 20px 0;
+    width: 100%;
+    padding: 30px 0;
+    border-top: 2px solid #eee;
 
-    img {
-        width: 220px;
-        margin-right: 25px;
-    }
+    .content {
+        display: flex;
+        max-width: 700px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
 
-    p {
-        padding: 0;
-        margin: 0;
-        color: $light-grey-color;
-    }
-
+        img {
+            width: 170px;
+            margin-right: 25px;
+        }
+    
+        p {
+            padding: 0;
+            margin: 0;
+            font-size: $base-font-size * 0.8;
+            color: $light-grey-color;
+        }
+    } 
 }

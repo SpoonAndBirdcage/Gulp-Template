@@ -19,25 +19,28 @@ a {
 h2 {
   margin: 0;
   padding: 12px;
-  font-family: "Helvetica Neue LT W01_55 Roman", Helvetica, sans-serif;
-  font-size: 1.8em;
+  font-family: "Helvetica Neue LT W01_25 Ult L", Helvetica, sans-serif;
+  font-size: 2em;
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 2px; }
 
 h3 {
   margin: 0;
-  font-size: 1.4em;
+  font-family: "Avenir Next W01 Light", Helvetica, sans-serif;
+  font-size: 1.5em;
   color: #458afc; }
 
 h4 {
   font-family: "AvenirNextLTW01-Medium", Helvetica, sans-serif;
   font-size: 1.2em;
-  margin: 0; }
+  margin: 0;
+  color: #458afc; }
   h4 span {
     padding-top: 4px;
     display: block;
-    font-size: 0.625em; }
+    font-size: 0.625em;
+    color: #333; }
 
 body {
   width: 100vw;
@@ -70,7 +73,8 @@ header {
     padding: 20px 65px;
     border-bottom: 2px solid #eee; }
     header nav a:first-of-type {
-      width: 250px; }
+      width: 250px;
+      line-height: 1.0; }
     header nav img {
       width: 240px; }
     header nav .tl-navigation {
@@ -102,7 +106,7 @@ header {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        text-align: right; }
+        text-align: left; }
   header .sub-navigation {
     padding: 2px 65px;
     background: #f9f9f9;
@@ -154,26 +158,30 @@ section.container {
     border-bottom: 1px solid #eee; }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 960px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: auto;
-  padding: 20px 0; }
-  footer img {
-    width: 220px;
-    margin-right: 25px; }
-  footer p {
-    padding: 0;
-    margin: 0;
-    color: #bbbbbb; }
+  width: 100%;
+  padding: 30px 0;
+  border-top: 2px solid #eee; }
+  footer .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 700px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto; }
+    footer .content img {
+      width: 170px;
+      margin-right: 25px; }
+    footer .content p {
+      padding: 0;
+      margin: 0;
+      font-size: 0.8em;
+      color: #bbbbbb; }

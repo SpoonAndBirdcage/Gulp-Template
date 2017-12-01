@@ -99,6 +99,10 @@ header {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
+        header nav .tl-navigation .navigation-ddl h3 {
+          padding-right: 10px; }
+        header nav .tl-navigation .navigation-ddl img {
+          width: 14px; }
       header nav .tl-navigation .current-user-ddl {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -107,6 +111,10 @@ header {
             -ms-flex-align: center;
                 align-items: center;
         text-align: left; }
+        header nav .tl-navigation .current-user-ddl h4 {
+          padding-right: 12px; }
+        header nav .tl-navigation .current-user-ddl img {
+          width: 14px; }
   header .sub-navigation {
     padding: 2px 65px;
     background: #f9f9f9;

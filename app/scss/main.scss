@@ -101,12 +101,28 @@ header{
             .navigation-ddl {
                 display: flex;
                 align-items: center;
+
+                h3 {
+                    padding-right: 10px;
+                }
+
+                img {
+                    width: 14px;
+                }
             }
 
             .current-user-ddl {
                 display: flex;
                 align-items: center;
                 text-align: left;
+
+                h4 {
+                    padding-right: 12px;
+                }
+                
+                img {
+                    width: 14px;
+                }
             }
         }
     }
